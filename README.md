@@ -1,4 +1,4 @@
-_The is early alpha, so not all features are present and the code is messy and bugged_
+_This is early alpha, so not all features are present and the code is messy and bugged_
 
 # Godot Theme Generator
 This addon simplifies UI theming in Godot. Input key colors, border specs, shadow specs, and margins, and that's it.
