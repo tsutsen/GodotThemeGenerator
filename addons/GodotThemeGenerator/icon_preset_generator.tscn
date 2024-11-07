@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc0pmwjat1ij4"]
+
+[ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/generators/icon_preset_generator.gd" id="1_ykey0"]
+
+[node name="IconPresetGenerator" type="Node"]
+script = ExtResource("1_ykey0")
+icons_folder = "C:/Users/harlo/Documents/Godot/GodotThemeGenerator/addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons"
+preset_folder = "C:/Users/harlo/Documents/Godot/GodotThemeGenerator/addons/GodotThemeGenerator/theme_generator/resources/presets"
+icon_preset_name = "testoo"
+import_icons = true

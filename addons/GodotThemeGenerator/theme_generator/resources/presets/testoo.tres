@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="IconPreset" load_steps=27 format=3 uid="uid://dhgakdeb27ivp"]
+
+[ext_resource type="Texture2D" uid="uid://cota3e68gik51" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/arrow_down.svg" id="1_x0868"]
+[ext_resource type="Texture2D" uid="uid://lq2f634nu2wh" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/arrow_right.svg" id="2_6ohtv"]
+[ext_resource type="Texture2D" uid="uid://cypm8sfgyef4i" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_checked_disabled.svg" id="3_bewwx"]
+[ext_resource type="Texture2D" uid="uid://bp0y3wbvxyold" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_checked_enabled.svg" id="4_keo1v"]
+[ext_resource type="Texture2D" uid="uid://bvt1j0csdkxeg" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_indeterminate_disabled.svg" id="5_ujsuy"]
+[ext_resource type="Texture2D" uid="uid://ctc2sfk56ob20" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_indeterminate_enabled.svg" id="6_sces6"]
+[ext_resource type="Texture2D" uid="uid://dim5y7bbfcmsu" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_unchecked_disabled.svg" id="7_37yx7"]
+[ext_resource type="Texture2D" uid="uid://b4vv85dgou0mx" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_unchecked_enabled.svg" id="8_janph"]
+[ext_resource type="Texture2D" uid="uid://wo6fjy23l4to" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/cross_normal.svg" id="9_rhyhu"]
+[ext_resource type="Texture2D" uid="uid://u6fmci482hod" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/cross_pressed.svg" id="10_to32c"]
+[ext_resource type="Texture2D" uid="uid://c5nhtycytb1qt" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/grabber_disabled.svg" id="11_py2f0"]
+[ext_resource type="Texture2D" uid="uid://co1wtu1qih85f" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/grabber_highlight.svg" id="12_cnrfr"]
+[ext_resource type="Texture2D" uid="uid://dr40m65cgek1t" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/grabber_normal.svg" id="13_f8uoj"]
+[ext_resource type="Texture2D" uid="uid://c0pcyver5napo" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/point_normal.svg" id="14_oolwg"]
+[ext_resource type="Texture2D" uid="uid://bn7a0ln1pkjad" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/point_pressed.svg" id="15_4nxdx"]
+[ext_resource type="Texture2D" uid="uid://ce4oiovs7r1fq" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/radio_checked_disabled.svg" id="16_dtddd"]
+[ext_resource type="Texture2D" uid="uid://ubnijbn7qexr" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/radio_checked_enabled.svg" id="17_noql2"]
+[ext_resource type="Texture2D" uid="uid://bjxo3mfbphson" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/radio_unchecked_disabled.svg" id="18_c51yb"]
+[ext_resource type="Texture2D" uid="uid://hw62skbhxybo" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/radio_unchecked_enabled.svg" id="19_170l3"]
+[ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/presets/icon_preset.gd" id="20_oe7wp"]
+[ext_resource type="Texture2D" uid="uid://c8okgxfchubne" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/tick_horizontal.svg" id="21_c5kfj"]
+[ext_resource type="Texture2D" uid="uid://c3uxpm1jdudxe" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/tick_vertical.svg" id="22_xwtpg"]
+[ext_resource type="Texture2D" uid="uid://cb1s5vro3wcg3" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/toggle_checked_disabled.svg" id="23_kyenp"]
+[ext_resource type="Texture2D" uid="uid://3nipcudtlk0o" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/toggle_checked_enabled.svg" id="24_b0y1y"]
+[ext_resource type="Texture2D" uid="uid://qtkgvswevgfe" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/toggle_unchecked_disabled.svg" id="25_dq3kl"]
+[ext_resource type="Texture2D" uid="uid://mmdd8nkgmb7r" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/toggle_unchecked_enabled.svg" id="26_068pa"]
+
+[resource]
+script = ExtResource("20_oe7wp")
+arrow_down = ExtResource("1_x0868")
+arrow_right = ExtResource("2_6ohtv")
+cross_normal = ExtResource("9_rhyhu")
+cross_pressed = ExtResource("10_to32c")
+point_normal = ExtResource("14_oolwg")
+point_pressed = ExtResource("15_4nxdx")
+tick_vertical = ExtResource("22_xwtpg")
+tick_horizontal = ExtResource("21_c5kfj")
+grabber_normal = ExtResource("13_f8uoj")
+grabber_highlight = ExtResource("12_cnrfr")
+grabber_disabled = ExtResource("11_py2f0")
+radio_checked_enabled = ExtResource("17_noql2")
+radio_checked_disabled = ExtResource("16_dtddd")
+radio_unchecked_enabled = ExtResource("19_170l3")
+radio_unchecked_disabled = ExtResource("18_c51yb")
+check_checked_enabled = ExtResource("4_keo1v")
+check_checked_disabled = ExtResource("3_bewwx")
+check_unchecked_enabled = ExtResource("8_janph")
+check_unchecked_disabled = ExtResource("7_37yx7")
+check_indeterminate_enabled = ExtResource("6_sces6")
+check_indeterminate_disabled = ExtResource("5_ujsuy")
+toggle_checked_enabled = ExtResource("24_b0y1y")
+toggle_checked_disabled = ExtResource("23_kyenp")
+toggle_unchecked_enabled = ExtResource("26_068pa")
+toggle_unchecked_disabled = ExtResource("25_dq3kl")

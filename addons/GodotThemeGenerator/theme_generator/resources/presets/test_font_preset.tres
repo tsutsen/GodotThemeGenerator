@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FontPreset" load_steps=3 format=3 uid="uid://dybaxy42kl8bu"]
+
+[ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/presets/font_preset.gd" id="1_1ndod"]
+[ext_resource type="FontFile" uid="uid://djr5bgpurnbqe" path="res://addons/GodotThemeGenerator/theme_generator/resources/fonts/Rubik-Regular.ttf" id="1_dwngk"]
+
+[resource]
+script = ExtResource("1_1ndod")
+font = ExtResource("1_dwngk")
+font_size = 16
+outline_size = 0
+line_spacing = 4

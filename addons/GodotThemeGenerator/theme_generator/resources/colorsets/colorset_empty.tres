@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ColorSet" load_steps=2 format=3 uid="uid://eedcwomxcwp0"]
+
+[ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/presets/color_set.gd" id="1_nrukq"]
+
+[resource]
+script = ExtResource("1_nrukq")
+normal = Color(0, 0, 0, 0)
+hover = Color(0, 0, 0, 0)
+pressed = Color(0, 0, 0, 0)
+focus = Color(0, 0, 0, 0)
+disabled = Color(0, 0, 0, 0)
+nocolor = Color(1, 1, 1, 0)
