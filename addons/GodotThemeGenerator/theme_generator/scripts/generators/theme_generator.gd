@@ -1,25 +1,21 @@
 @tool
 extends Node
 
-@export var theme_name : String = 'new theme'
 
-#var _colors_backup : ColorPresetBasic
+@export_category('Generation Parameters')
+@export var theme_name : String = 'new theme'
 
 @export var colors : ColorPreset
 @export var textures : TextureSet
 @export var shapes : ShapePreset
 @export var fonts : FontPreset
 @export var icons : IconPreset
+@export var default_stylebox_type : ThemeVariables.STYLEBOX_TYPE = ThemeVariables.STYLEBOX_TYPE.FLAT
 
 var new_theme : Theme
 
-@export var export : bool : 
-	set(new):
-		export = new
-		if new == true:
-			generate_theme()
-
-@export_group('Styles')
+@export_category('Extra Customization')
+@export_group('Component Styles')
 @export var panel_style : PanelStyle
 @export var button_style : ButtonStyle
 @export var textedit_style : TexteditStyle
@@ -29,6 +25,22 @@ var new_theme : Theme
 @export var menu_style : MenuStyle
 @export var container_style : ContainerStyle
 @export var tree_style : TreeStyle
+
+@export_category('Export')
+@export var generate : bool : 
+	set(new):
+		generate = new
+		if new == true:
+			generate_theme()
+
+@export var save : bool : 
+	set(new):
+		save = new
+		if new == true:
+			save_theme()
+
+
+
 
 func init_styles():
 	button_style = ButtonStyle.new()
@@ -45,6 +57,9 @@ func generate_theme():
 	print('generating theme')
 	new_theme = Theme.new()
 	
+	new_theme.default_font = fonts.font
+	new_theme.default_font_size = fonts.font_size
+	
 	init_theme_types()
 	init_styles()
 	
@@ -57,8 +72,11 @@ func generate_theme():
 	apply(label_style)
 	apply(label_title_style)
 	apply(menu_style)
-	
-	save_theme()
+
+func save_theme():
+	print('saving theme')
+	ResourceSaver.save(new_theme,'res://'+theme_name+'.theme')
+
 
 func init_theme_types():
 	# background
@@ -97,15 +115,15 @@ func init_theme_types():
 	new_theme.add_type('Tree')
 
 
-func save_theme():
-	ResourceSaver.save(new_theme,'res://'+theme_name+'.theme')
+
 
 
 func apply(style : ComponentStyle):
 	#if style.colors == null:
-	style.colors = colors
 	#if style.shapes == null:
+	style.colors = colors
 	style.shapes = shapes
+	style.fonts = fonts
 	style.icons = icons
 	
 	style.init_styleboxes()
