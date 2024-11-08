@@ -2,7 +2,6 @@ extends ComponentStyle
 class_name ButtonStyle
 
 
-@export var icons : Dictionary
 
 func _init() -> void:
 	affected_nodes = ['Button','CheckButton','ColorPickerButton','OptionButton']
@@ -14,6 +13,14 @@ func _init() -> void:
 		'hover_pressed':ThemeVariables.COLORSET.PRESSED,
 		'focus':ThemeVariables.COLORSET.FOCUS,
 		'disabled':ThemeVariables.COLORSET.DISABLED
+	}
+	
+	to_gdtheme_icons = {
+		'checked':icons.toggle_checked_enabled,
+		'checked_disabled':icons.toggle_checked_disabled,
+		'unchecked':icons.toggle_unchecked_enabled,
+		'unchecked_disabled':icons.toggle_unchecked_disabled,
+		'arrow':icons.arrow_up_down,
 	}
 	
 	to_gdtheme_colors = {

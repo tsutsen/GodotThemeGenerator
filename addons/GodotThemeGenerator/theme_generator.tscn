@@ -1,27 +1,51 @@
-[gd_scene load_steps=56 format=3 uid="uid://ctqrr8mkwynel"]
+[gd_scene load_steps=80 format=3 uid="uid://ctqrr8mkwynel"]
 
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/generators/theme_generator.gd" id="1_u8pn0"]
 [ext_resource type="Resource" uid="uid://dv3o3k0oxbxce" path="res://addons/GodotThemeGenerator/theme_generator/resources/presets/test_color_preset.tres" id="2_07btp"]
 [ext_resource type="Resource" uid="uid://cu5mh74vv80q6" path="res://addons/GodotThemeGenerator/theme_generator/resources/presets/test_shape_preset.tres" id="3_2wasj"]
 [ext_resource type="Resource" uid="uid://dybaxy42kl8bu" path="res://addons/GodotThemeGenerator/theme_generator/resources/presets/test_font_preset.tres" id="4_126m7"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/presets/font_preset.gd" id="5_ofg56"]
+[ext_resource type="Resource" uid="uid://cpsv5hgi65lrg" path="res://addons/GodotThemeGenerator/theme_generator/resources/presets/test_icon_preset.tres" id="5_s3xga"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/panel_style.gd" id="6_3ofqk"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/button_style.gd" id="7_2jeoe"]
+[ext_resource type="Texture2D" uid="uid://wo6fjy23l4to" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/cross_normal.svg" id="8_jfldt"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/textedit_style.gd" id="8_tjo50"]
+[ext_resource type="Texture2D" uid="uid://3nipcudtlk0o" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/toggle_checked_enabled.svg" id="9_fglvp"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/slider_style.gd" id="9_yht6j"]
+[ext_resource type="Texture2D" uid="uid://cota3e68gik51" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/arrow_down.svg" id="10_0gwpg"]
+[ext_resource type="Texture2D" uid="uid://cb1s5vro3wcg3" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/toggle_checked_disabled.svg" id="10_0yavq"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/label_style.gd" id="10_5i5ic"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/label_title_style.gd" id="11_5oqmv"]
+[ext_resource type="Texture2D" uid="uid://lq2f634nu2wh" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/arrow_right.svg" id="11_8hyq1"]
+[ext_resource type="Texture2D" uid="uid://mmdd8nkgmb7r" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/toggle_unchecked_enabled.svg" id="11_dg6uo"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/menu_style.gd" id="12_4fb1d"]
+[ext_resource type="Texture2D" uid="uid://qtkgvswevgfe" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/toggle_unchecked_disabled.svg" id="12_6odi5"]
+[ext_resource type="Texture2D" uid="uid://crx2icdo86450" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/arrow_up_down.svg" id="12_cokml"]
+[ext_resource type="Texture2D" uid="uid://dr40m65cgek1t" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/grabber_normal.svg" id="13_4lf47"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/container_style.gd" id="13_heib7"]
+[ext_resource type="Texture2D" uid="uid://c5nhtycytb1qt" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/grabber_disabled.svg" id="14_e5ks8"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/tree_style.gd" id="14_rsmna"]
+[ext_resource type="Texture2D" uid="uid://co1wtu1qih85f" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/grabber_highlight.svg" id="15_tfld8"]
+[ext_resource type="Texture2D" uid="uid://bp0y3wbvxyold" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_checked_enabled.svg" id="16_7w3gf"]
+[ext_resource type="Texture2D" uid="uid://cypm8sfgyef4i" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_checked_disabled.svg" id="17_avr28"]
+[ext_resource type="Texture2D" uid="uid://b4vv85dgou0mx" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_unchecked_enabled.svg" id="18_x4w6f"]
+[ext_resource type="Texture2D" uid="uid://dim5y7bbfcmsu" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_unchecked_disabled.svg" id="19_qwgga"]
+[ext_resource type="Texture2D" uid="uid://ctc2sfk56ob20" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_indeterminate_enabled.svg" id="20_5f76v"]
+[ext_resource type="Texture2D" uid="uid://bvt1j0csdkxeg" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_indeterminate_disabled.svg" id="21_lp01d"]
+[ext_resource type="Texture2D" uid="uid://ubnijbn7qexr" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/radio_checked_enabled.svg" id="22_6takf"]
+[ext_resource type="Texture2D" uid="uid://ce4oiovs7r1fq" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/radio_checked_disabled.svg" id="23_6ip1a"]
+[ext_resource type="Texture2D" uid="uid://hw62skbhxybo" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/radio_unchecked_enabled.svg" id="24_fl3dx"]
+[ext_resource type="Texture2D" uid="uid://bjxo3mfbphson" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/radio_unchecked_disabled.svg" id="25_ofyo5"]
+[ext_resource type="Texture2D" uid="uid://c3uxpm1jdudxe" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/tick_vertical.svg" id="26_5pnos"]
+[ext_resource type="Texture2D" uid="uid://c0pcyver5napo" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/point_normal.svg" id="27_lo5yk"]
 
-[sub_resource type="Resource" id="Resource_mihv7"]
+[sub_resource type="Resource" id="Resource_hi80k"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oocmc"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t10dn"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -41,27 +65,29 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_wocyf"]
+[sub_resource type="Resource" id="Resource_xkcr3"]
 script = ExtResource("6_3ofqk")
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_mihv7")
+fonts = SubResource("Resource_hi80k")
+icons = ExtResource("5_s3xga")
 styleboxes = {
-"panel": SubResource("StyleBoxFlat_oocmc")
+"panel": SubResource("StyleBoxFlat_t10dn")
 }
 stylebox_colorsets = {
 "panel": 4
 }
 stylebox_types = {}
 stylebox_type = 1
+to_gdtheme_icons = {}
 
-[sub_resource type="Resource" id="Resource_c7ctn"]
+[sub_resource type="Resource" id="Resource_geopv"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wjcya"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6n7y0"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -81,7 +107,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_av1bo"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mm8m6"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -101,7 +127,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dofx8"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvwm7"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -121,7 +147,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2b3n6"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mut5s"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -141,7 +167,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0hsnp"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fch7g"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -161,7 +187,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xx88q"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uluwk"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -181,19 +207,19 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_3ryfs"]
+[sub_resource type="Resource" id="Resource_oyjux"]
 script = ExtResource("7_2jeoe")
-icons = {}
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_c7ctn")
+fonts = SubResource("Resource_geopv")
+icons = ExtResource("5_s3xga")
 styleboxes = {
-"disabled": SubResource("StyleBoxFlat_xx88q"),
-"focus": SubResource("StyleBoxFlat_0hsnp"),
-"hover": SubResource("StyleBoxFlat_av1bo"),
-"hover_pressed": SubResource("StyleBoxFlat_2b3n6"),
-"normal": SubResource("StyleBoxFlat_wjcya"),
-"pressed": SubResource("StyleBoxFlat_dofx8")
+"disabled": SubResource("StyleBoxFlat_uluwk"),
+"focus": SubResource("StyleBoxFlat_fch7g"),
+"hover": SubResource("StyleBoxFlat_mm8m6"),
+"hover_pressed": SubResource("StyleBoxFlat_mut5s"),
+"normal": SubResource("StyleBoxFlat_6n7y0"),
+"pressed": SubResource("StyleBoxFlat_hvwm7")
 }
 stylebox_colorsets = {
 "disabled": 4,
@@ -205,14 +231,21 @@ stylebox_colorsets = {
 }
 stylebox_types = {}
 stylebox_type = 1
+to_gdtheme_icons = {
+"arrow": ExtResource("12_cokml"),
+"checked": ExtResource("9_fglvp"),
+"checked_disabled": ExtResource("10_0yavq"),
+"unchecked": ExtResource("11_dg6uo"),
+"unchecked_disabled": ExtResource("12_6odi5")
+}
 
-[sub_resource type="Resource" id="Resource_v8avv"]
+[sub_resource type="Resource" id="Resource_feeiv"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjtsp"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sql5e"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -232,27 +265,27 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ysmq"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_plvta"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.831373, 0.831373, 0.831373, 1)
+bg_color = Color(0, 0, 0, 0)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
 border_width_bottom = 3
-border_color = Color(0, 0, 0, 0.196078)
+border_color = Color(0.36239, 0.455845, 0.810895, 1)
 border_blend = true
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 corner_detail = 10
-shadow_color = Color(0, 0, 0, 0.290196)
+shadow_color = Color(0, 0, 0, 0)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjdqx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wkxpw"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -272,33 +305,37 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_r2uaa"]
+[sub_resource type="Resource" id="Resource_ioap0"]
 script = ExtResource("8_tjo50")
 caret_width = 1
 line_spacing = 4
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_v8avv")
+fonts = SubResource("Resource_feeiv")
+icons = ExtResource("5_s3xga")
 styleboxes = {
-"focus": SubResource("StyleBoxFlat_1ysmq"),
-"normal": SubResource("StyleBoxFlat_qjtsp"),
-"read_only": SubResource("StyleBoxFlat_bjdqx")
+"focus": SubResource("StyleBoxFlat_plvta"),
+"normal": SubResource("StyleBoxFlat_sql5e"),
+"read_only": SubResource("StyleBoxFlat_wkxpw")
 }
 stylebox_colorsets = {
-"focus": 2,
+"focus": 3,
 "normal": 0,
 "read_only": 4
 }
 stylebox_types = {}
 stylebox_type = 1
+to_gdtheme_icons = {
+"clear": ExtResource("8_jfldt")
+}
 
-[sub_resource type="Resource" id="Resource_y4s7x"]
+[sub_resource type="Resource" id="Resource_0ate3"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a50k3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_on6da"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -318,7 +355,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ynoe"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8m0d7"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -338,7 +375,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjsv7"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjrj5"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -358,15 +395,16 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_aifq0"]
+[sub_resource type="Resource" id="Resource_4g0x3"]
 script = ExtResource("9_yht6j")
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_y4s7x")
+fonts = SubResource("Resource_0ate3")
+icons = ExtResource("5_s3xga")
 styleboxes = {
-"grabber_area": SubResource("StyleBoxFlat_a50k3"),
-"grabber_area_highlight": SubResource("StyleBoxFlat_5ynoe"),
-"slider": SubResource("StyleBoxFlat_kjsv7")
+"grabber_area": SubResource("StyleBoxFlat_on6da"),
+"grabber_area_highlight": SubResource("StyleBoxFlat_8m0d7"),
+"slider": SubResource("StyleBoxFlat_bjrj5")
 }
 stylebox_colorsets = {
 "grabber_area": 0,
@@ -375,14 +413,20 @@ stylebox_colorsets = {
 }
 stylebox_types = {}
 stylebox_type = 1
+to_gdtheme_icons = {
+"grabber": ExtResource("13_4lf47"),
+"grabber_disabled": ExtResource("14_e5ks8"),
+"grabber_highlight": ExtResource("15_tfld8"),
+"tick": ExtResource("26_5pnos")
+}
 
-[sub_resource type="Resource" id="Resource_hklgo"]
+[sub_resource type="Resource" id="Resource_qbn2f"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3o5f3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d17nl"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -402,13 +446,14 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_vykou"]
+[sub_resource type="Resource" id="Resource_us6mk"]
 script = ExtResource("10_5i5ic")
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_hklgo")
+fonts = SubResource("Resource_qbn2f")
+icons = ExtResource("5_s3xga")
 styleboxes = {
-"normal": SubResource("StyleBoxFlat_3o5f3")
+"normal": SubResource("StyleBoxFlat_d17nl")
 }
 stylebox_colorsets = {
 "normal": 0
@@ -417,14 +462,15 @@ stylebox_types = {
 "normal": 0
 }
 stylebox_type = 1
+to_gdtheme_icons = {}
 
-[sub_resource type="Resource" id="Resource_87310"]
+[sub_resource type="Resource" id="Resource_gtoto"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_guxb0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vf3aj"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -444,13 +490,14 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_txmnl"]
+[sub_resource type="Resource" id="Resource_4n54h"]
 script = ExtResource("11_5oqmv")
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_87310")
+fonts = SubResource("Resource_gtoto")
+icons = ExtResource("5_s3xga")
 styleboxes = {
-"normal": SubResource("StyleBoxFlat_guxb0")
+"normal": SubResource("StyleBoxFlat_vf3aj")
 }
 stylebox_colorsets = {
 "normal": 0
@@ -459,14 +506,15 @@ stylebox_types = {
 "normal": 0
 }
 stylebox_type = 1
+to_gdtheme_icons = {}
 
-[sub_resource type="Resource" id="Resource_ru57u"]
+[sub_resource type="Resource" id="Resource_kgtgs"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6p2x"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8euq0"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -486,27 +534,41 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_qegbt"]
+[sub_resource type="Resource" id="Resource_n7qu3"]
 script = ExtResource("12_4fb1d")
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_ru57u")
+fonts = SubResource("Resource_kgtgs")
+icons = ExtResource("5_s3xga")
 styleboxes = {
-"panel": SubResource("StyleBoxFlat_c6p2x")
+"panel": SubResource("StyleBoxFlat_8euq0")
 }
 stylebox_colorsets = {
 "panel": 4
 }
 stylebox_types = {}
 stylebox_type = 1
+to_gdtheme_icons = {
+"checked": ExtResource("16_7w3gf"),
+"checked_disabled": ExtResource("17_avr28"),
+"radio_checked": ExtResource("22_6takf"),
+"radio_checked_disabled": ExtResource("23_6ip1a"),
+"radio_unchecked": ExtResource("24_fl3dx"),
+"radio_unchecked_disabled": ExtResource("25_ofyo5"),
+"space": ExtResource("27_lo5yk"),
+"submenu": ExtResource("11_8hyq1"),
+"tick": ExtResource("26_5pnos"),
+"unchecked": ExtResource("18_x4w6f"),
+"unchecked_disabled": ExtResource("19_qwgga")
+}
 
-[sub_resource type="Resource" id="Resource_4256l"]
+[sub_resource type="Resource" id="Resource_juyup"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="Resource" id="Resource_owyd0"]
+[sub_resource type="Resource" id="Resource_xy1wc"]
 script = ExtResource("13_heib7")
 separation = 8
 margin_bottom = 10
@@ -515,19 +577,21 @@ margin_right = 16
 margin_top = 10
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_4256l")
+fonts = SubResource("Resource_juyup")
+icons = ExtResource("5_s3xga")
 styleboxes = {}
 stylebox_colorsets = {}
 stylebox_types = {}
 stylebox_type = 1
+to_gdtheme_icons = {}
 
-[sub_resource type="Resource" id="Resource_6wxl2"]
+[sub_resource type="Resource" id="Resource_ris7q"]
 script = ExtResource("5_ofg56")
 font_size = 16
 outline_size = 0
 line_spacing = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aicg1"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iesgy"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -547,7 +611,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2p4x5"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1j24s"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -567,7 +631,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ts3ty"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhp0g"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -587,7 +651,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dhagx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3nul8"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -607,7 +671,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_78to2"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85071"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -627,7 +691,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s4h4t"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_33yx0"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -647,7 +711,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dkbsy"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pfxac"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -667,7 +731,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_qnjwg"]
+[sub_resource type="Resource" id="Resource_ncr34"]
 script = ExtResource("14_rsmna")
 button_margin = 4
 item_margin = 16
@@ -682,29 +746,18 @@ relationship_line_width = 1
 draw_guides = true
 draw_relationship_lines = false
 draw_borders = false
-icons = {
-"arrow": null,
-"arrow_collapsed": null,
-"checked": null,
-"checked_disabled": null,
-"indeterminate": null,
-"indeterminate_disabled": null,
-"select_arrow": null,
-"unchecked": null,
-"unchecked_disabled": null,
-"updown": null
-}
 shapes = ExtResource("3_2wasj")
 colors = ExtResource("2_07btp")
-fonts = SubResource("Resource_6wxl2")
+fonts = SubResource("Resource_ris7q")
+icons = ExtResource("5_s3xga")
 styleboxes = {
-"button_pressed": SubResource("StyleBoxFlat_aicg1"),
-"cursor": SubResource("StyleBoxFlat_2p4x5"),
-"cursor_unfocused": SubResource("StyleBoxFlat_ts3ty"),
-"focus": SubResource("StyleBoxFlat_dhagx"),
-"panel": SubResource("StyleBoxFlat_dkbsy"),
-"selected": SubResource("StyleBoxFlat_78to2"),
-"selected_focus": SubResource("StyleBoxFlat_s4h4t")
+"button_pressed": SubResource("StyleBoxFlat_iesgy"),
+"cursor": SubResource("StyleBoxFlat_1j24s"),
+"cursor_unfocused": SubResource("StyleBoxFlat_xhp0g"),
+"focus": SubResource("StyleBoxFlat_3nul8"),
+"panel": SubResource("StyleBoxFlat_pfxac"),
+"selected": SubResource("StyleBoxFlat_85071"),
+"selected_focus": SubResource("StyleBoxFlat_33yx0")
 }
 stylebox_colorsets = {
 "button_pressed": 2,
@@ -717,20 +770,37 @@ stylebox_colorsets = {
 }
 stylebox_types = {}
 stylebox_type = 1
+to_gdtheme_icons = {
+"arrow": ExtResource("10_0gwpg"),
+"arrow_collapsed": ExtResource("11_8hyq1"),
+"checked": ExtResource("16_7w3gf"),
+"checked_disabled": ExtResource("17_avr28"),
+"indeterminate": ExtResource("20_5f76v"),
+"indeterminate_disabled": ExtResource("21_lp01d"),
+"radio_checked": ExtResource("22_6takf"),
+"radio_checked_disabled": ExtResource("23_6ip1a"),
+"radio_unchecked": ExtResource("24_fl3dx"),
+"radio_unchecked_disabled": ExtResource("25_ofyo5"),
+"select_arrow": ExtResource("10_0gwpg"),
+"unchecked": ExtResource("18_x4w6f"),
+"unchecked_disabled": ExtResource("19_qwgga"),
+"updown": ExtResource("12_cokml")
+}
 
 [node name="ThemeGenerator" type="Node"]
 script = ExtResource("1_u8pn0")
-theme_name = "results/test_theme0"
+theme_name = "results/test_theme"
 colors = ExtResource("2_07btp")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
+icons = ExtResource("5_s3xga")
 export = true
-panel_style = SubResource("Resource_wocyf")
-button_style = SubResource("Resource_3ryfs")
-textedit_style = SubResource("Resource_r2uaa")
-slider_style = SubResource("Resource_aifq0")
-label_style = SubResource("Resource_vykou")
-label_title_style = SubResource("Resource_txmnl")
-menu_style = SubResource("Resource_qegbt")
-container_style = SubResource("Resource_owyd0")
-tree_style = SubResource("Resource_qnjwg")
+panel_style = SubResource("Resource_xkcr3")
+button_style = SubResource("Resource_oyjux")
+textedit_style = SubResource("Resource_ioap0")
+slider_style = SubResource("Resource_4g0x3")
+label_style = SubResource("Resource_us6mk")
+label_title_style = SubResource("Resource_4n54h")
+menu_style = SubResource("Resource_n7qu3")
+container_style = SubResource("Resource_xy1wc")
+tree_style = SubResource("Resource_ncr34")

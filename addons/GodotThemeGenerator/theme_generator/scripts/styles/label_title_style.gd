@@ -11,6 +11,9 @@ func _init() -> void:
 	stylebox_types = {
 		'normal' : ThemeVariables.STYLEBOX_TYPE.EMPTY
 	}
+	to_gdtheme_icons = {
+		
+	}
 	to_gdtheme_colors = {
 		'font_color' : colors.text_and_icons.normal,
 	}

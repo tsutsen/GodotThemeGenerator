@@ -24,19 +24,6 @@ class_name TreeStyle
 
 
 
-@export var icons : Dictionary = {
-	'arrow':null,
-	'arrow_collapsed':null,
-	'checked':null,
-	'checked_disabled':null,
-	'indeterminate':null,
-	'indeterminate_disabled':null,
-	'select_arrow':null,
-	'unchecked':null,
-	'unchecked_disabled':null,
-	'updown':null
-}
-
 
 func _init() -> void:
 	affected_nodes = ['Tree']
@@ -54,7 +41,23 @@ func _init() -> void:
 		#'panel':ThemeVariables.STYLEBOX_TYPE.EMPTY,
 		#'focus':ThemeVariables.STYLEBOX_TYPE.EMPTY
 	#}
-	
+	to_gdtheme_icons = {
+		'arrow':icons.arrow_down,
+		'select_arrow':icons.arrow_down,
+		'arrow_collapsed':icons.arrow_right,
+		'updown':icons.arrow_up_down,
+		
+		'checked':icons.check_checked_enabled,
+		'checked_disabled':icons.check_checked_disabled,
+		'unchecked':icons.check_unchecked_enabled,
+		'unchecked_disabled':icons.check_unchecked_disabled,
+		'indeterminate':icons.check_indeterminate_enabled,
+		'indeterminate_disabled':icons.check_indeterminate_disabled,
+		'radio_checked':icons.radio_checked_enabled,
+		'radio_checked_disabled':icons.radio_checked_disabled,
+		'radio_unchecked':icons.radio_unchecked_enabled,
+		'radio_unchecked_disabled':icons.radio_unchecked_disabled,
+	}
 	to_gdtheme_colors = {
 		'font_color' : colors.text_and_icons.normal,
 		'font_disabled_color' : colors.text_and_icons.disabled,

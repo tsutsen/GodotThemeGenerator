@@ -9,6 +9,12 @@ func _init() -> void:
 		'grabber_area_highlight':ThemeVariables.COLORSET.PRESSED,
 		'slider':ThemeVariables.COLORSET.DISABLED
 	}
+	to_gdtheme_icons = {
+		'grabber':icons.grabber_normal,
+		'grabber_disabled':icons.grabber_disabled,
+		'grabber_highlight':icons.grabber_highlight,
+		'tick':icons.tick_vertical
+	}
 	to_gdtheme_colors = {
 		
 	}

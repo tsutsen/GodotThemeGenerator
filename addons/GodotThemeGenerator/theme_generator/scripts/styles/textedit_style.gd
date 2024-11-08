@@ -13,6 +13,9 @@ func _init() -> void:
 		'focus':ThemeVariables.COLORSET.FOCUS,
 		'read_only':ThemeVariables.COLORSET.DISABLED
 	}
+	to_gdtheme_icons = {
+		'clear':icons.cross_normal,
+	}
 	to_gdtheme_colors = {
 		'font_color' : colors.text_and_icons.normal,
 		'font_readonly_color' : colors.text_and_icons.disabled,

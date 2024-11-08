@@ -27,7 +27,6 @@ static func generate_flat_stylebox(colors:ColorPreset, shapes:ShapePreset, state
 	
 	var new_stylebox = StyleBoxFlat.new()
 	
-	print(state)
 	new_stylebox.bg_color = colors.elements.get(state) # this one is unique
 	
 	new_stylebox.corner_detail = 10

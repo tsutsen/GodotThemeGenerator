@@ -9,6 +9,7 @@ extends Node
 @export var textures : TextureSet
 @export var shapes : ShapePreset
 @export var fonts : FontPreset
+@export var icons : IconPreset
 
 var new_theme : Theme
 
@@ -105,11 +106,13 @@ func apply(style : ComponentStyle):
 	style.colors = colors
 	#if style.shapes == null:
 	style.shapes = shapes
+	style.icons = icons
 	
 	style.init_styleboxes()
 	
 	var theme_types = style.affected_nodes
 	var styleboxes = style.styleboxes
+	var icons = style.to_gdtheme_icons
 	var gdtheme_colors = style.to_gdtheme_colors
 	var gdtheme_props = style.to_gdtheme_props
 	var gdtheme_font = style.to_gdtheme_font
@@ -126,3 +129,5 @@ func apply(style : ComponentStyle):
 			new_theme.set_font_size(name,theme_type,gdtheme_fontsize[name])
 		for name in styleboxes:
 			new_theme.set_stylebox(name,theme_type,styleboxes[name])
+		for name in icons:
+			new_theme.set_icon(name,theme_type,icons[name])

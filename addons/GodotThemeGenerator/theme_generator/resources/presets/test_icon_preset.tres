@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="IconPreset" load_steps=27 format=3 uid="uid://cpsv5hgi65lrg"]
+[gd_resource type="Resource" script_class="IconPreset" load_steps=28 format=3 uid="uid://cpsv5hgi65lrg"]
 
 [ext_resource type="Texture2D" uid="uid://cota3e68gik51" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/arrow_down.svg" id="1_6xcyt"]
 [ext_resource type="Texture2D" uid="uid://lq2f634nu2wh" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/arrow_right.svg" id="2_kd7d0"]
+[ext_resource type="Texture2D" uid="uid://crx2icdo86450" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/arrow_up_down.svg" id="3_33grs"]
 [ext_resource type="Texture2D" uid="uid://cypm8sfgyef4i" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_checked_disabled.svg" id="3_bw2n4"]
 [ext_resource type="Texture2D" uid="uid://bp0y3wbvxyold" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_checked_enabled.svg" id="4_agd0f"]
 [ext_resource type="Texture2D" uid="uid://bvt1j0csdkxeg" path="res://addons/GodotThemeGenerator/theme_generator/resources/icons/test_icons/check_indeterminate_disabled.svg" id="5_mbs7q"]
@@ -31,6 +32,7 @@
 script = ExtResource("20_gball")
 arrow_down = ExtResource("1_6xcyt")
 arrow_right = ExtResource("2_kd7d0")
+arrow_up_down = ExtResource("3_33grs")
 cross_normal = ExtResource("9_3ehrt")
 cross_pressed = ExtResource("10_brmci")
 point_normal = ExtResource("14_340dm")
