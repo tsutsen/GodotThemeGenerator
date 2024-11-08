@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_76rsw")
-corner_radius_normal = 10
+corner_radius_normal = 5
 corner_radius_secondary = 0
 border_width = 3
 border_blend = true

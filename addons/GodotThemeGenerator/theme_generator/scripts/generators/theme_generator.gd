@@ -4,6 +4,8 @@ extends Node
 
 @export_category('Generation Parameters')
 @export var theme_name : String = 'new theme'
+@export var theme_folder : String = 'res://test_theme/'
+@export var stylebox_path : String
 
 @export var colors : ColorPreset
 @export var textures : TextureSet
@@ -12,19 +14,9 @@ extends Node
 @export var icons : IconPreset
 @export var default_stylebox_type : ThemeVariables.STYLEBOX_TYPE = ThemeVariables.STYLEBOX_TYPE.FLAT
 
-var new_theme : Theme
-
 @export_category('Extra Customization')
-@export_group('Component Styles')
-@export var panel_style : PanelStyle
-@export var button_style : ButtonStyle
-@export var textedit_style : TexteditStyle
-@export var slider_style : SliderStyle
-@export var label_style : LabelStyle
-@export var label_title_style : LabelTitleStyle
-@export var menu_style : MenuStyle
-@export var container_style : ContainerStyle
-@export var tree_style : TreeStyle
+@export var theme_styleboxes : Dictionary
+@export var component_styles : Array[ComponentStyle]
 
 @export_category('Export')
 @export var generate : bool : 
@@ -38,20 +30,45 @@ var new_theme : Theme
 		save = new
 		if new == true:
 			save_theme()
+			generate = false
+			save=false
 
+var new_theme : Theme
 
+func prepare_generator():
+	component_styles = [
+		PanelStyle.new(),
+		ButtonStyle.new(),
+		CheckboxStyle.new(),
+		TexteditStyle.new(),
+		VSliderStyle.new(),
+		HSliderStyle.new(),
+		SpinboxStyle.new(),
+		ScrollbarStyle.new(),
+		ProgressbarStyle.new(),
+		LabelStyle.new(),
+		LabelTitleStyle.new(),
+		MenuStyle.new(),
+		TabStyle.new(),
+		ContainerStyle.new(),
+		TreeStyle.new(),
+	]
 
-
-func init_styles():
-	button_style = ButtonStyle.new()
-	label_style = LabelStyle.new()
-	textedit_style = TexteditStyle.new()
-	panel_style = PanelStyle.new()
-	container_style = ContainerStyle.new()
-	slider_style = SliderStyle.new()
-	tree_style = TreeStyle.new()
-	label_title_style = LabelTitleStyle.new()
-	menu_style = MenuStyle.new()
+func generate_styleboxes():
+	var temp_stylebox_paths = []
+	for colorset in ['normal','hover','pressed','focus','disabled','nocolor']:
+		var temp_stylebox = StyleboxGenerator.generate_stylebox(
+			default_stylebox_type, colors, shapes, colorset)
+		var stylebox_path = theme_folder+'stylebox_'+colorset+'.tres'
+		#if FileAccess.file_exists(stylebox_path):
+			#DirAccess.remove_absolute(ProjectSettings.globalize_path(stylebox_path))
+		ResourceSaver.save(temp_stylebox,stylebox_path)
+		temp_stylebox_paths.append(stylebox_path)
+		theme_styleboxes[colorset] = load(stylebox_path)
+	#var file_system = EditorInterface.get_resource_filesystem()
+	#file_system.reimport_files(temp_stylebox_paths)
+	
+	#update_files(temp_stylebox_paths)
 
 func generate_theme():
 	print('generating theme')
@@ -60,71 +77,37 @@ func generate_theme():
 	new_theme.default_font = fonts.font
 	new_theme.default_font_size = fonts.font_size
 	
-	init_theme_types()
-	init_styles()
-	
-	apply(button_style)
-	apply(textedit_style)
-	apply(panel_style)
-	apply(container_style)
-	apply(slider_style)
-	apply(tree_style)
-	apply(label_style)
-	apply(label_title_style)
-	apply(menu_style)
+	prepare_generator()
+	generate_styleboxes()
+	apply_component_styles()
+
+func apply_component_styles(custom_only=false):
+	for style in component_styles:
+		if (not custom_only) or style.custom_style:
+			apply(style)
 
 func save_theme():
+	apply_component_styles(true)
+	var theme_path = theme_folder+theme_name+'.theme'
 	print('saving theme')
-	ResourceSaver.save(new_theme,'res://'+theme_name+'.theme')
-
-
-func init_theme_types():
-	# background
-	new_theme.add_type('Panel')
-	
-	# buttons
-	new_theme.add_type('Button')
-	new_theme.add_type('CheckButton')
-	#new_theme.add_type('CheckBox')
-	new_theme.add_type('ColorPickerButton')
-	new_theme.add_type('OptionButton')
-	
-	# sliding elements
-	new_theme.add_type('VSlider')
-	new_theme.add_type('HSlider')
-	new_theme.add_type('HScrollBar')
-	new_theme.add_type('VScrollBar')
-	new_theme.add_type('ProgressBar')
-	
-	# boring menus
-	new_theme.add_type('PopupMenu')
-	new_theme.add_type('PopupPanel')
-	new_theme.add_type('AcceptDialog')
-	
-	# text edit elements
-	new_theme.add_type('TextEdit')
-	new_theme.add_type('LineEdit')
-	
-	# label elements
-	new_theme.add_type('Label')
-	new_theme.add_type('LabelTitle')
-	new_theme.set_type_variation('LabelTitle','Label')
-	
-	# containers
-	new_theme.add_type('MarginContainer')
-	new_theme.add_type('Tree')
-
-
+	#if FileAccess.file_exists(theme_path):
+		#print(DirAccess.remove_absolute(ProjectSettings.globalize_path(theme_path)))
+	ResourceSaver.save(new_theme,theme_path)
+	#var file_system = EditorInterface.get_resource_filesystem()
+	#file_system.reimport_files([theme_path])
 
 
 
 func apply(style : ComponentStyle):
-	#if style.colors == null:
-	#if style.shapes == null:
-	style.colors = colors
-	style.shapes = shapes
-	style.fonts = fonts
-	style.icons = icons
+	for theme_type in style.affected_nodes:
+		new_theme.add_type(theme_type)
+	
+	style.stylebox_folder = theme_folder
+	if not style.custom_style:
+		style.colors = colors
+		style.shapes = shapes
+		style.fonts = fonts
+		style.icons = icons
 	
 	style.set_styleboxes()
 	

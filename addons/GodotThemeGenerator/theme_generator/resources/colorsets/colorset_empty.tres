@@ -4,9 +4,9 @@
 
 [resource]
 script = ExtResource("1_nrukq")
-normal = Color(0, 0, 0, 0)
-hover = Color(0, 0, 0, 0)
-pressed = Color(0, 0, 0, 0)
+normal = Color(0.45098, 0.45098, 0.45098, 1)
+hover = Color(0.655602, 0.655601, 0.655601, 1)
+pressed = Color(0.862745, 0.862745, 0.862745, 1)
 focus = Color(0, 0, 0, 0)
-disabled = Color(0, 0, 0, 0)
+disabled = Color(0.4491, 0.49464, 0.577343, 1)
 nocolor = Color(1, 1, 1, 0)
