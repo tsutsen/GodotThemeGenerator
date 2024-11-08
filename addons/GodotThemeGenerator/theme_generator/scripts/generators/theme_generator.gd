@@ -126,13 +126,13 @@ func apply(style : ComponentStyle):
 	style.fonts = fonts
 	style.icons = icons
 	
-	style.init_styleboxes()
+	style.set_styleboxes()
 	
 	var theme_types = style.affected_nodes
 	var styleboxes = style.styleboxes
 	var icons = style.to_gdtheme_icons
 	var gdtheme_colors = style.to_gdtheme_colors
-	var gdtheme_props = style.to_gdtheme_props
+	var gdtheme_props = style.to_gdtheme_constants
 	var gdtheme_font = style.to_gdtheme_font
 	var gdtheme_fontsize = style.to_gdtheme_fontsize
 

@@ -5,17 +5,11 @@ class_name TexteditStyle
 @export var caret_width : int = 1
 @export var line_spacing : int = 4
 
-func _init() -> void:
+
+func set_affected_nodes():
 	affected_nodes = ['LineEdit','TextEdit','CodeEdit']
-	
-	stylebox_colorsets = {
-		'normal':ThemeVariables.COLORSET.NORMAL,
-		'focus':ThemeVariables.COLORSET.FOCUS,
-		'read_only':ThemeVariables.COLORSET.DISABLED
-	}
-	to_gdtheme_icons = {
-		'clear':icons.cross_normal,
-	}
+
+func set_colors():
 	to_gdtheme_colors = {
 		'font_color' : colors.text_and_icons.normal,
 		'font_readonly_color' : colors.text_and_icons.disabled,
@@ -26,12 +20,23 @@ func _init() -> void:
 		
 		'selection_color' : colors.text_and_icons.disabled,
 		
-		'background_color' : colors.elements.normal,
+		#'background_color' : colors.elements.normal,
 	}
-	
-	to_gdtheme_props = {
+
+func set_constants():
+	to_gdtheme_constants = {
 		'caret_width' : caret_width,
 		'line_spacing' : line_spacing,
 	}
-	
-	init_styleboxes()
+
+func set_icons():
+	to_gdtheme_icons = {
+		'clear':icons.cross_normal,
+	}
+
+func set_stylebox_colorsets():
+	stylebox_colorsets = {
+		'normal':ThemeVariables.COLORSET.NORMAL,
+		'focus':ThemeVariables.COLORSET.FOCUS,
+		'read_only':ThemeVariables.COLORSET.DISABLED
+	}

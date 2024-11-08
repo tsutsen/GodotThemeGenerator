@@ -17,7 +17,7 @@
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/container_style.gd" id="13_heib7"]
 [ext_resource type="Script" path="res://addons/GodotThemeGenerator/theme_generator/scripts/styles/tree_style.gd" id="14_rsmna"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6tag1"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o50ad"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -37,7 +37,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_punb6"]
+[sub_resource type="Resource" id="Resource_ts40o"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -46,7 +46,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_3761g"]
+[sub_resource type="Resource" id="Resource_1rogf"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -55,7 +55,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_6870o"]
+[sub_resource type="Resource" id="Resource_jqqns"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -64,7 +64,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_g8bew"]
+[sub_resource type="Resource" id="Resource_b0pk1"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -73,30 +73,30 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_ghoq2"]
+[sub_resource type="Resource" id="Resource_8sj1f"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_g8bew")
-elements = SubResource("Resource_3761g")
-borders = SubResource("Resource_punb6")
-shadows = SubResource("Resource_6870o")
+text_and_icons = SubResource("Resource_b0pk1")
+elements = SubResource("Resource_1rogf")
+borders = SubResource("Resource_ts40o")
+shadows = SubResource("Resource_jqqns")
 
-[sub_resource type="Resource" id="Resource_p16t6"]
+[sub_resource type="Resource" id="Resource_u0ggw"]
 script = ExtResource("6_3ofqk")
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_ghoq2")
+textures = SubResource("Resource_8sj1f")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
 default_stylebox_type = 1
 styleboxes = {
-"panel": SubResource("StyleBoxFlat_6tag1")
+"panel": SubResource("StyleBoxFlat_o50ad")
 }
 stylebox_colorsets = {
 "panel": 4
 }
 stylebox_types = {}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cx208"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc43n"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -116,7 +116,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ow5f"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2tur7"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -136,7 +136,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcxb0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_27jx4"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -156,7 +156,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_poc5h"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3t85l"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -176,7 +176,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o58vj"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fi4qa"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -196,7 +196,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8wppa"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0jac7"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -216,7 +216,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_quiqo"]
+[sub_resource type="Resource" id="Resource_h8c4r"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -225,7 +225,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_ev6ma"]
+[sub_resource type="Resource" id="Resource_aq7ym"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -234,7 +234,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_v2ock"]
+[sub_resource type="Resource" id="Resource_bux7c"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -243,7 +243,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_3bcbk"]
+[sub_resource type="Resource" id="Resource_67udr"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -252,28 +252,28 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_tvd71"]
+[sub_resource type="Resource" id="Resource_dy1fv"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_3bcbk")
-elements = SubResource("Resource_ev6ma")
-borders = SubResource("Resource_quiqo")
-shadows = SubResource("Resource_v2ock")
+text_and_icons = SubResource("Resource_67udr")
+elements = SubResource("Resource_aq7ym")
+borders = SubResource("Resource_h8c4r")
+shadows = SubResource("Resource_bux7c")
 
-[sub_resource type="Resource" id="Resource_557ao"]
+[sub_resource type="Resource" id="Resource_5l3r6"]
 script = ExtResource("7_2jeoe")
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_tvd71")
+textures = SubResource("Resource_dy1fv")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
 default_stylebox_type = 1
 styleboxes = {
-"disabled": SubResource("StyleBoxFlat_8wppa"),
-"focus": SubResource("StyleBoxFlat_o58vj"),
-"hover": SubResource("StyleBoxFlat_8ow5f"),
-"hover_pressed": SubResource("StyleBoxFlat_poc5h"),
-"normal": SubResource("StyleBoxFlat_cx208"),
-"pressed": SubResource("StyleBoxFlat_rcxb0")
+"disabled": SubResource("StyleBoxFlat_0jac7"),
+"focus": SubResource("StyleBoxFlat_fi4qa"),
+"hover": SubResource("StyleBoxFlat_2tur7"),
+"hover_pressed": SubResource("StyleBoxFlat_3t85l"),
+"normal": SubResource("StyleBoxFlat_jc43n"),
+"pressed": SubResource("StyleBoxFlat_27jx4")
 }
 stylebox_colorsets = {
 "disabled": 4,
@@ -285,7 +285,7 @@ stylebox_colorsets = {
 }
 stylebox_types = {}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i5eda"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_werw1"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -305,7 +305,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aohur"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6xrg"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -325,7 +325,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lsesj"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b25kn"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -345,7 +345,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_08ce0"]
+[sub_resource type="Resource" id="Resource_50bux"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -354,7 +354,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_3b73x"]
+[sub_resource type="Resource" id="Resource_i6l8r"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -363,7 +363,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_y3k4p"]
+[sub_resource type="Resource" id="Resource_ijkqx"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -372,7 +372,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_xnorp"]
+[sub_resource type="Resource" id="Resource_6vdn7"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -381,27 +381,27 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_ssom1"]
+[sub_resource type="Resource" id="Resource_alxb6"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_xnorp")
-elements = SubResource("Resource_3b73x")
-borders = SubResource("Resource_08ce0")
-shadows = SubResource("Resource_y3k4p")
+text_and_icons = SubResource("Resource_6vdn7")
+elements = SubResource("Resource_i6l8r")
+borders = SubResource("Resource_50bux")
+shadows = SubResource("Resource_ijkqx")
 
-[sub_resource type="Resource" id="Resource_ylecq"]
+[sub_resource type="Resource" id="Resource_payes"]
 script = ExtResource("8_tjo50")
 caret_width = 1
 line_spacing = 4
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_ssom1")
+textures = SubResource("Resource_alxb6")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
 default_stylebox_type = 1
 styleboxes = {
-"focus": SubResource("StyleBoxFlat_aohur"),
-"normal": SubResource("StyleBoxFlat_i5eda"),
-"read_only": SubResource("StyleBoxFlat_lsesj")
+"focus": SubResource("StyleBoxFlat_j6xrg"),
+"normal": SubResource("StyleBoxFlat_werw1"),
+"read_only": SubResource("StyleBoxFlat_b25kn")
 }
 stylebox_colorsets = {
 "focus": 3,
@@ -410,7 +410,7 @@ stylebox_colorsets = {
 }
 stylebox_types = {}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sodo6"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u3vjk"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -430,7 +430,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxhsx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o0nan"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -450,7 +450,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bkht2"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fr7j"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -470,7 +470,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_dff5v"]
+[sub_resource type="Resource" id="Resource_vb632"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -479,7 +479,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_7as45"]
+[sub_resource type="Resource" id="Resource_s3hb5"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -488,7 +488,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_pphj5"]
+[sub_resource type="Resource" id="Resource_nhpi6"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -497,7 +497,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_f35xn"]
+[sub_resource type="Resource" id="Resource_n6k45"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -506,25 +506,25 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_m8fhn"]
+[sub_resource type="Resource" id="Resource_ouhti"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_f35xn")
-elements = SubResource("Resource_7as45")
-borders = SubResource("Resource_dff5v")
-shadows = SubResource("Resource_pphj5")
+text_and_icons = SubResource("Resource_n6k45")
+elements = SubResource("Resource_s3hb5")
+borders = SubResource("Resource_vb632")
+shadows = SubResource("Resource_nhpi6")
 
-[sub_resource type="Resource" id="Resource_gx70h"]
+[sub_resource type="Resource" id="Resource_e6dqk"]
 script = ExtResource("9_yht6j")
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_m8fhn")
+textures = SubResource("Resource_ouhti")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
 default_stylebox_type = 1
 styleboxes = {
-"grabber_area": SubResource("StyleBoxFlat_sodo6"),
-"grabber_area_highlight": SubResource("StyleBoxFlat_kxhsx"),
-"slider": SubResource("StyleBoxFlat_bkht2")
+"grabber_area": SubResource("StyleBoxFlat_u3vjk"),
+"grabber_area_highlight": SubResource("StyleBoxFlat_o0nan"),
+"slider": SubResource("StyleBoxFlat_1fr7j")
 }
 stylebox_colorsets = {
 "grabber_area": 0,
@@ -533,7 +533,7 @@ stylebox_colorsets = {
 }
 stylebox_types = {}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8efoy"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6twj"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -553,7 +553,7 @@ corner_detail = 10
 shadow_color = Color(1, 1, 1, 0)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_bmgyt"]
+[sub_resource type="Resource" id="Resource_l6iw4"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -562,7 +562,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_x147d"]
+[sub_resource type="Resource" id="Resource_rc5h3"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -571,7 +571,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_0ye5r"]
+[sub_resource type="Resource" id="Resource_hkm0d"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -580,7 +580,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_pk75s"]
+[sub_resource type="Resource" id="Resource_pnho4"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -589,30 +589,30 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_c74vo"]
+[sub_resource type="Resource" id="Resource_j8rs2"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_pk75s")
-elements = SubResource("Resource_x147d")
-borders = SubResource("Resource_bmgyt")
-shadows = SubResource("Resource_0ye5r")
+text_and_icons = SubResource("Resource_pnho4")
+elements = SubResource("Resource_rc5h3")
+borders = SubResource("Resource_l6iw4")
+shadows = SubResource("Resource_hkm0d")
 
-[sub_resource type="Resource" id="Resource_b7te1"]
+[sub_resource type="Resource" id="Resource_ik6tm"]
 script = ExtResource("10_5i5ic")
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_c74vo")
+textures = SubResource("Resource_j8rs2")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
 default_stylebox_type = 1
 styleboxes = {
-"normal": SubResource("StyleBoxFlat_8efoy")
+"normal": SubResource("StyleBoxFlat_e6twj")
 }
 stylebox_colorsets = {
 "normal": 5
 }
 stylebox_types = {}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oalss"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2xxq5"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -632,7 +632,7 @@ corner_detail = 10
 shadow_color = Color(1, 1, 1, 0)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_7jyrc"]
+[sub_resource type="Resource" id="Resource_ey75q"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -641,7 +641,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_211xr"]
+[sub_resource type="Resource" id="Resource_3rj0f"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -650,7 +650,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_p61d4"]
+[sub_resource type="Resource" id="Resource_c6fud"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -659,7 +659,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_8fogb"]
+[sub_resource type="Resource" id="Resource_kas3l"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -668,30 +668,30 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_0rmca"]
+[sub_resource type="Resource" id="Resource_wh1x6"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_8fogb")
-elements = SubResource("Resource_211xr")
-borders = SubResource("Resource_7jyrc")
-shadows = SubResource("Resource_p61d4")
+text_and_icons = SubResource("Resource_kas3l")
+elements = SubResource("Resource_3rj0f")
+borders = SubResource("Resource_ey75q")
+shadows = SubResource("Resource_c6fud")
 
-[sub_resource type="Resource" id="Resource_18pie"]
+[sub_resource type="Resource" id="Resource_ye6tg"]
 script = ExtResource("11_5oqmv")
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_0rmca")
+textures = SubResource("Resource_wh1x6")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
 default_stylebox_type = 1
 styleboxes = {
-"normal": SubResource("StyleBoxFlat_oalss")
+"normal": SubResource("StyleBoxFlat_2xxq5")
 }
 stylebox_colorsets = {
 "normal": 5
 }
 stylebox_types = {}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_an73n"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxup2"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -711,7 +711,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_asnfr"]
+[sub_resource type="Resource" id="Resource_vnft1"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -720,7 +720,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_r1abd"]
+[sub_resource type="Resource" id="Resource_yuxq2"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -729,7 +729,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_7sv1s"]
+[sub_resource type="Resource" id="Resource_l2cp0"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -738,7 +738,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_nlsg5"]
+[sub_resource type="Resource" id="Resource_kaebq"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -747,30 +747,30 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_luyjl"]
+[sub_resource type="Resource" id="Resource_rw0fy"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_nlsg5")
-elements = SubResource("Resource_r1abd")
-borders = SubResource("Resource_asnfr")
-shadows = SubResource("Resource_7sv1s")
+text_and_icons = SubResource("Resource_kaebq")
+elements = SubResource("Resource_yuxq2")
+borders = SubResource("Resource_vnft1")
+shadows = SubResource("Resource_l2cp0")
 
-[sub_resource type="Resource" id="Resource_qsky1"]
+[sub_resource type="Resource" id="Resource_073c6"]
 script = ExtResource("12_4fb1d")
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_luyjl")
+textures = SubResource("Resource_rw0fy")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
 default_stylebox_type = 1
 styleboxes = {
-"panel": SubResource("StyleBoxFlat_an73n")
+"panel": SubResource("StyleBoxFlat_kxup2")
 }
 stylebox_colorsets = {
 "panel": 4
 }
 stylebox_types = {}
 
-[sub_resource type="Resource" id="Resource_uejwg"]
+[sub_resource type="Resource" id="Resource_rorui"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -779,7 +779,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_t8i1r"]
+[sub_resource type="Resource" id="Resource_ek3s3"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -788,7 +788,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_i7a61"]
+[sub_resource type="Resource" id="Resource_blvqb"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -797,7 +797,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_u1quy"]
+[sub_resource type="Resource" id="Resource_adqcu"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -806,14 +806,14 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_iruxp"]
+[sub_resource type="Resource" id="Resource_1ql2d"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_u1quy")
-elements = SubResource("Resource_t8i1r")
-borders = SubResource("Resource_uejwg")
-shadows = SubResource("Resource_i7a61")
+text_and_icons = SubResource("Resource_adqcu")
+elements = SubResource("Resource_ek3s3")
+borders = SubResource("Resource_rorui")
+shadows = SubResource("Resource_blvqb")
 
-[sub_resource type="Resource" id="Resource_g26gx"]
+[sub_resource type="Resource" id="Resource_2dl1v"]
 script = ExtResource("13_heib7")
 separation = 8
 margin_bottom = 10
@@ -821,7 +821,7 @@ margin_left = 16
 margin_right = 16
 margin_top = 10
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_iruxp")
+textures = SubResource("Resource_1ql2d")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
@@ -830,7 +830,7 @@ styleboxes = {}
 stylebox_colorsets = {}
 stylebox_types = {}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uvp0a"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o072e"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -850,7 +850,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dq7wv"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m0ir5"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -870,7 +870,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4dn45"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4onj5"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -890,7 +890,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_goe5y"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nu6bj"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -910,7 +910,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3uxpf"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oufwk"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -930,7 +930,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r1d18"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i03aj"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -950,7 +950,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0)
 shadow_size = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gr5cd"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iono2"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
@@ -970,7 +970,7 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.290196)
 shadow_size = 2
 
-[sub_resource type="Resource" id="Resource_okapd"]
+[sub_resource type="Resource" id="Resource_5ujmd"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -979,7 +979,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_7ln4p"]
+[sub_resource type="Resource" id="Resource_5psvm"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -988,7 +988,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_bjscd"]
+[sub_resource type="Resource" id="Resource_004wp"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -997,7 +997,7 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_ckwcn"]
+[sub_resource type="Resource" id="Resource_a5q64"]
 script = ExtResource("7_ipjh4")
 normal = Color(0, 0, 0, 1)
 hover = Color(0, 0, 0, 1)
@@ -1006,14 +1006,14 @@ focus = Color(0, 0, 0, 1)
 disabled = Color(0, 0, 0, 1)
 nocolor = Color(1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_oj76b"]
+[sub_resource type="Resource" id="Resource_ussix"]
 script = ExtResource("8_fjaae")
-text_and_icons = SubResource("Resource_ckwcn")
-elements = SubResource("Resource_7ln4p")
-borders = SubResource("Resource_okapd")
-shadows = SubResource("Resource_bjscd")
+text_and_icons = SubResource("Resource_a5q64")
+elements = SubResource("Resource_5psvm")
+borders = SubResource("Resource_5ujmd")
+shadows = SubResource("Resource_004wp")
 
-[sub_resource type="Resource" id="Resource_wno2u"]
+[sub_resource type="Resource" id="Resource_k7mg7"]
 script = ExtResource("14_rsmna")
 button_margin = 4
 item_margin = 16
@@ -1029,19 +1029,19 @@ draw_guides = true
 draw_relationship_lines = false
 draw_borders = false
 colors = ExtResource("2_07btp")
-textures = SubResource("Resource_oj76b")
+textures = SubResource("Resource_ussix")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
 default_stylebox_type = 1
 styleboxes = {
-"button_pressed": SubResource("StyleBoxFlat_uvp0a"),
-"cursor": SubResource("StyleBoxFlat_dq7wv"),
-"cursor_unfocused": SubResource("StyleBoxFlat_4dn45"),
-"focus": SubResource("StyleBoxFlat_goe5y"),
-"panel": SubResource("StyleBoxFlat_gr5cd"),
-"selected": SubResource("StyleBoxFlat_3uxpf"),
-"selected_focus": SubResource("StyleBoxFlat_r1d18")
+"button_pressed": SubResource("StyleBoxFlat_o072e"),
+"cursor": SubResource("StyleBoxFlat_m0ir5"),
+"cursor_unfocused": SubResource("StyleBoxFlat_4onj5"),
+"focus": SubResource("StyleBoxFlat_nu6bj"),
+"panel": SubResource("StyleBoxFlat_iono2"),
+"selected": SubResource("StyleBoxFlat_oufwk"),
+"selected_focus": SubResource("StyleBoxFlat_i03aj")
 }
 stylebox_colorsets = {
 "button_pressed": 2,
@@ -1056,19 +1056,19 @@ stylebox_types = {}
 
 [node name="ThemeGenerator" type="Node"]
 script = ExtResource("1_u8pn0")
-theme_name = "theme to test3"
+theme_name = "ABSOLUTELY NEW 3"
 colors = ExtResource("2_07btp")
 shapes = ExtResource("3_2wasj")
 fonts = ExtResource("4_126m7")
 icons = ExtResource("5_s3xga")
-panel_style = SubResource("Resource_p16t6")
-button_style = SubResource("Resource_557ao")
-textedit_style = SubResource("Resource_ylecq")
-slider_style = SubResource("Resource_gx70h")
-label_style = SubResource("Resource_b7te1")
-label_title_style = SubResource("Resource_18pie")
-menu_style = SubResource("Resource_qsky1")
-container_style = SubResource("Resource_g26gx")
-tree_style = SubResource("Resource_wno2u")
+panel_style = SubResource("Resource_u0ggw")
+button_style = SubResource("Resource_5l3r6")
+textedit_style = SubResource("Resource_payes")
+slider_style = SubResource("Resource_e6dqk")
+label_style = SubResource("Resource_ik6tm")
+label_title_style = SubResource("Resource_ye6tg")
+menu_style = SubResource("Resource_073c6")
+container_style = SubResource("Resource_2dl1v")
+tree_style = SubResource("Resource_k7mg7")
 generate = true
 save = true

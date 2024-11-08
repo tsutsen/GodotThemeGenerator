@@ -2,12 +2,21 @@ extends ComponentStyle
 class_name  MenuStyle
 
 
-func _init() -> void:
+func set_affected_nodes():
 	affected_nodes = ['PopupMenu','AcceptDialog']
-	
+
+func set_colors():
+	to_gdtheme_colors = {
+		'font_color' : colors.text_and_icons.normal,
+		'font_separator_color' : colors.text_and_icons.normal
+	}
+
+func set_stylebox_colorsets():
 	stylebox_colorsets = {
 		'panel':ThemeVariables.COLORSET.DISABLED
 	}
+
+func set_icons():
 	to_gdtheme_icons = {
 		#'close':icons.cross_normal,
 		#'close_pressed':icons.cross_pressed,
@@ -26,12 +35,3 @@ func _init() -> void:
 		'tick':icons.tick_vertical, # todo smth with vertical and horizontal
 		'space':icons.point_normal, 
 	}
-	to_gdtheme_colors = {
-		'font_color' : colors.text_and_icons.normal,
-		'font_separator_color' : colors.text_and_icons.normal
-	}
-	to_gdtheme_props = {
-	
-	}
-	
-	init_styleboxes()

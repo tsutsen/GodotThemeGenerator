@@ -23,41 +23,10 @@ class_name TreeStyle
 @export var draw_borders : bool = false
 
 
-
-
-func _init() -> void:
+func set_affected_nodes():
 	affected_nodes = ['Tree']
-	
-	stylebox_colorsets = {
-		'button_pressed':ThemeVariables.COLORSET.PRESSED,
-		'cursor':ThemeVariables.COLORSET.HOVER,
-		'cursor_unfocused':ThemeVariables.COLORSET.NORMAL,
-		'focus':ThemeVariables.COLORSET.FOCUS, # NOCOLOR
-		'selected':ThemeVariables.COLORSET.PRESSED,
-		'selected_focus':ThemeVariables.COLORSET.FOCUS,
-		'panel':ThemeVariables.COLORSET.DISABLED,
-	}
-	#stylebox_types = {
-		#'panel':ThemeVariables.STYLEBOX_TYPE.EMPTY,
-		#'focus':ThemeVariables.STYLEBOX_TYPE.EMPTY
-	#}
-	to_gdtheme_icons = {
-		'arrow':icons.arrow_down,
-		'select_arrow':icons.arrow_down,
-		'arrow_collapsed':icons.arrow_right,
-		'updown':icons.arrow_up_down,
-		
-		'checked':icons.check_checked_enabled,
-		'checked_disabled':icons.check_checked_disabled,
-		'unchecked':icons.check_unchecked_enabled,
-		'unchecked_disabled':icons.check_unchecked_disabled,
-		'indeterminate':icons.check_indeterminate_enabled,
-		'indeterminate_disabled':icons.check_indeterminate_disabled,
-		'radio_checked':icons.radio_checked_enabled,
-		'radio_checked_disabled':icons.radio_checked_disabled,
-		'radio_unchecked':icons.radio_unchecked_enabled,
-		'radio_unchecked_disabled':icons.radio_unchecked_disabled,
-	}
+
+func set_colors():
 	to_gdtheme_colors = {
 		'font_color' : colors.text_and_icons.normal,
 		'font_disabled_color' : colors.text_and_icons.disabled,
@@ -69,7 +38,9 @@ func _init() -> void:
 		'relationship_line_color' : colors.text_and_icons.normal,
 		'drop_position_color' : colors.text_and_icons.hover,
 	}
-	to_gdtheme_props = {
+
+func set_constants():
+	to_gdtheme_constants = {
 		'button_margin' : button_margin,
 		'item_margin' : item_margin,
 		
@@ -89,4 +60,32 @@ func _init() -> void:
 		'draw_relationship_lines' : int(draw_relationship_lines),
 	}
 
-	init_styleboxes()
+func set_icons():
+	to_gdtheme_icons = {
+		'arrow':icons.arrow_down,
+		'select_arrow':icons.arrow_down,
+		'arrow_collapsed':icons.arrow_right,
+		'updown':icons.arrow_up_down,
+		
+		'checked':icons.check_checked_enabled,
+		'checked_disabled':icons.check_checked_disabled,
+		'unchecked':icons.check_unchecked_enabled,
+		'unchecked_disabled':icons.check_unchecked_disabled,
+		'indeterminate':icons.check_indeterminate_enabled,
+		'indeterminate_disabled':icons.check_indeterminate_disabled,
+		'radio_checked':icons.radio_checked_enabled,
+		'radio_checked_disabled':icons.radio_checked_disabled,
+		'radio_unchecked':icons.radio_unchecked_enabled,
+		'radio_unchecked_disabled':icons.radio_unchecked_disabled,
+	}
+
+func set_stylebox_colorsets():
+	stylebox_colorsets = {
+		'button_pressed':ThemeVariables.COLORSET.PRESSED,
+		'cursor':ThemeVariables.COLORSET.HOVER,
+		'cursor_unfocused':ThemeVariables.COLORSET.NORMAL,
+		'focus':ThemeVariables.COLORSET.FOCUS, # NOCOLOR
+		'selected':ThemeVariables.COLORSET.PRESSED,
+		'selected_focus':ThemeVariables.COLORSET.FOCUS,
+		'panel':ThemeVariables.COLORSET.DISABLED,
+	}

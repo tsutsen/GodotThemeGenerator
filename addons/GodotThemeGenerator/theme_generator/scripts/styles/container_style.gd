@@ -8,15 +8,16 @@ class_name ContainerStyle
 @export var margin_right : int = 16
 @export var margin_top : int = 10
 
-func _init() -> void:
+
+func set_affected_nodes():
 	affected_nodes = ['MarginContainer','BoxContainer']
-	
-	to_gdtheme_props = {
+
+
+func set_constants():
+	to_gdtheme_constants = {
 		'margin_bottom':margin_bottom,
 		'margin_left':margin_left,
 		'margin_right':margin_right,
 		'margin_top':margin_top,
 		'separation':separation
 	}
-	
-	init_styleboxes()

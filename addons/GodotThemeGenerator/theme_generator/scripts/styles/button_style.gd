@@ -2,27 +2,10 @@ extends ComponentStyle
 class_name ButtonStyle
 
 
+func set_affected_nodes():
+	affected_nodes = ['Button','CheckButton','CheckBox','ColorPickerButton','OptionButton']
 
-func _init() -> void:
-	affected_nodes = ['Button','CheckButton','ColorPickerButton','OptionButton']
-	
-	stylebox_colorsets = {
-		'normal':ThemeVariables.COLORSET.NORMAL,
-		'hover':ThemeVariables.COLORSET.HOVER,
-		'pressed':ThemeVariables.COLORSET.PRESSED,
-		'hover_pressed':ThemeVariables.COLORSET.PRESSED,
-		'focus':ThemeVariables.COLORSET.FOCUS,
-		'disabled':ThemeVariables.COLORSET.DISABLED
-	}
-	
-	to_gdtheme_icons = {
-		'checked':icons.toggle_checked_enabled,
-		'checked_disabled':icons.toggle_checked_disabled,
-		'unchecked':icons.toggle_unchecked_enabled,
-		'unchecked_disabled':icons.toggle_unchecked_disabled,
-		'arrow':icons.arrow_up_down,
-	}
-	
+func set_colors():
 	to_gdtheme_colors = {
 		'font_color' : colors.text_and_icons.normal,
 		'font_disabled_color' : colors.text_and_icons.disabled,
@@ -38,5 +21,22 @@ func _init() -> void:
 		'icon_pressed_color' : colors.text_and_icons.pressed,
 		'icon_hover_pressed_color' : colors.text_and_icons.pressed,
 	}
-	
-	init_styleboxes()
+
+func set_icons():
+	to_gdtheme_icons = {
+		'checked':icons.toggle_checked_enabled,
+		'checked_disabled':icons.toggle_checked_disabled,
+		'unchecked':icons.toggle_unchecked_enabled,
+		'unchecked_disabled':icons.toggle_unchecked_disabled,
+		'arrow':icons.arrow_up_down,
+	}
+
+func set_stylebox_colorsets():
+	stylebox_colorsets = {
+		'normal':ThemeVariables.COLORSET.NORMAL,
+		'hover':ThemeVariables.COLORSET.HOVER,
+		'pressed':ThemeVariables.COLORSET.PRESSED,
+		'hover_pressed':ThemeVariables.COLORSET.PRESSED,
+		'focus':ThemeVariables.COLORSET.FOCUS,
+		'disabled':ThemeVariables.COLORSET.DISABLED
+	}
